@@ -1,4 +1,5 @@
 package q5
+import "strings"
 
 //Pedro começou a frequentar aulas de programação. Na primeira aula, sua tarefa foi escrever um programa simples. O
 //programa deveria fazer o seguinte: na sequência de caracteres fornecida, composta por letras latinas maiúsculas e
@@ -15,6 +16,36 @@ package q5
 //Ajude Pedro a lidar com esta tarefa fácil.
 
 func ProcessString(s string) string {
-	// Seu código aqui
-	return ""
+	func ProcessString(s string) []string {
+	var letras []string
+
+	A := "A"
+	E := "E"
+	I := "I"
+	O := "O"
+	U := "U"
+
+	for i := 0; i < len(letras); i++ {
+		if letras[i] == A {
+			strings.Split(letras[i], A)
+
+		} else if letras[i] == E {
+			strings.Split(letras[i], E)
+
+		} else if letras[i] == I {
+			strings.Split(letras[i], I)
+
+		} else if letras[i] == O {
+			strings.Split(letras[i], O)
+		} else if letras[i] == U {
+			strings.Split(letras[i], U)
+		}
+		var novaString []string
+		novaString = append(novaString, letras...)
+		return novaString
+
+	}
+
 }
+	
+
